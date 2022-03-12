@@ -11,14 +11,14 @@ public class MainApp extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-        Parent menu = FXMLLoader.load(getClass().getResource("scenes/menu.fxml"));
+        Parent menu = FXMLLoader.load(getClass().getResource("scenes/Sample.fxml"));
 
-        Scene menuScene = new Scene(menu);
+        Scene scene = new Scene(menu);
 
-        menuScene.getStylesheets().add(getClass().getResource("styles.css").toExternalForm());
+        scene.getStylesheets().add(getClass().getResource("styles.css").toExternalForm());
         
-        stage.setTitle("NoteApp");
-        stage.setScene(menuScene);
+        stage.setTitle("MVC");
+        stage.setScene(scene);
         stage.show();
     }
 
