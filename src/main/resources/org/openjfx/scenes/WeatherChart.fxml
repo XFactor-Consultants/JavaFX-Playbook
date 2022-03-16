@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.collections.* ?>
+<?import openjfx.* ?>
+<?import javafx.scene.layout.VBox?>
+
+
+<LineChart fx:id="lineChart" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.openjfx.controllers.WeatherChartController">
+    <xAxis>
+        <NumberAxis fx:id="axisX" forceZeroInRange="false" autoRanging="true" label="Time" minorTickCount="10">
+        </NumberAxis>
+    </xAxis>
+    <yAxis>
+        <NumberAxis fx:id="axisY" animated="false" label="Temperature">
+        </NumberAxis>
+    </yAxis>
+</LineChart>

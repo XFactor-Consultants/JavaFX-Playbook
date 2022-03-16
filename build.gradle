@@ -8,6 +8,10 @@ repositories {
     mavenCentral()
 }
 
+dependencies {
+  implementation 'com.google.code.gson:gson:2.9.0'
+}
+
 javafx {
     version = "17.0.1"
     modules = [ 'javafx.controls', 'javafx.fxml' ]
@@ -15,7 +19,7 @@ javafx {
 
 application {
     mainClass = "org.openjfx.MainApp"
-    mainModule = "WeatherApp"
+    mainModule = "weatherapp"
 }
 
 jlink {

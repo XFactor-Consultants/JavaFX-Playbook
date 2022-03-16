@@ -7,6 +7,7 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 
+
 public class MainApp extends Application {
 
     @Override
@@ -16,8 +17,9 @@ public class MainApp extends Application {
         Scene scene = new Scene(menu);
 
         scene.getStylesheets().add(getClass().getResource("styles.css").toExternalForm());
+
         
-        stage.setTitle("MVC");
+        stage.setTitle("Weather App");
         stage.setScene(scene);
         stage.show();
     }
