@@ -65,12 +65,12 @@ public class MenuController {
     }
 
     public void initialize() {
-        final FileChooser chooser = new FileChooser();
+        FileChooser chooser = new FileChooser();
         open.addEventFilter(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
             @Override public void handle(MouseEvent e) {
-                Stage stage = (Stage)((Node) e.getSource()).getScene().getWindow();
-                File file = chooser.showOpenDialog(stage);
                 try {
+                    Stage stage = (Stage)((Node) e.getSource()).getScene().getWindow();
+                    File file = chooser.showOpenDialog(stage);
                     String text = readFile(file);
                     showEditor(text);
                 } catch (IOException e1) {
