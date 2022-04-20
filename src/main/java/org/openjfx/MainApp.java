@@ -11,13 +11,12 @@ public class MainApp extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-        Parent menu = FXMLLoader.load(getClass().getResource("scenes/Sample.fxml"));
-
-        Scene scene = new Scene(menu);
-
+        Parent root = FXMLLoader.load(getClass().getResource("scene.fxml"));
+        
+        Scene scene = new Scene(root);
         scene.getStylesheets().add(getClass().getResource("styles.css").toExternalForm());
         
-        stage.setTitle("MVC");
+        stage.setTitle("JavaFX and Gradle");
         stage.setScene(scene);
         stage.show();
     }
