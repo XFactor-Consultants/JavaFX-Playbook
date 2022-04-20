@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.WebView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.xfactor.controllers.MainController">
+   <children>
+      <HBox>
+         <children>
+            <Button HBox.hgrow="ALWAYS" fx:id="back" text="Back"/>
+            <Button HBox.hgrow="ALWAYS" fx:id="refresh" text="Refresh"/>
+            <TextField HBox.hgrow="ALWAYS" fx:id="address"/>
+            <Button HBox.hgrow="ALWAYS" fx:id="forward" text="Forward"/>
+         </children>
+      </HBox>
+      <WebView fx:id="webView" />
+   </children>
+</VBox>

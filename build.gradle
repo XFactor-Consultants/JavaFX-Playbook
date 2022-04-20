@@ -10,11 +10,11 @@ repositories {
 
 javafx {
     version = "17.0.1"
-    modules = [ 'javafx.controls', 'javafx.fxml' ]
+    modules = [ 'javafx.controls', 'javafx.fxml', 'javafx.web' ]
 }
 
 application {
-    mainClass = "org.openjfx.MainApp"
+    mainClass = "org.xfactor.MainApp"
     mainModule = "NoteApp"
 }
 

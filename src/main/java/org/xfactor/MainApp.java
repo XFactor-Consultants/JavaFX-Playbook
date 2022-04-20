@@ -1,4 +1,4 @@
-package org.openjfx;
+package org.xfactor;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -11,7 +11,7 @@ public class MainApp extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-        Parent menu = FXMLLoader.load(getClass().getResource("scenes/Sample.fxml"));
+        Parent menu = FXMLLoader.load(getClass().getResource("scenes/Main.fxml"));
 
         Scene scene = new Scene(menu);
 
