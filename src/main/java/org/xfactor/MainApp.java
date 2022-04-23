@@ -1,4 +1,4 @@
-package org.openjfx;
+package org.xfactor;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

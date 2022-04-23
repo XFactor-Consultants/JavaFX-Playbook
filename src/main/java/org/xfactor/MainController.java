@@ -1,9 +1,9 @@
-package org.openjfx;
+package org.xfactor;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 
-public class FXMLController {
+public class MainController {
 
     @FXML
     private Label label;
