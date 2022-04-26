@@ -18,7 +18,7 @@ public class MainController {
     private Button shuffle;
 
     public void initialize() {
-        Card[] numbers =  IntStream.range(0, 99).mapToObj(v-> new Card(v,v,0)).toArray( Card[]::new);
+        Card[] numbers =  IntStream.range(0, 99).mapToObj(v-> new Card(v,v)).toArray( Card[]::new);
         grid.setCellFactory(new CardFactory());
         grid.getItems().addAll(numbers);
         grid.setOrientation(Orientation.HORIZONTAL);
@@ -34,8 +34,7 @@ public class MainController {
                     for (int i = 0; i < oldList.size(); i++) {
                         int newIndex = newList.indexOf(oldList.get(i));
                         newList.get(newIndex).index = newIndex ;
-                        newList.get(newIndex).deltaX = newIndex - i;
-                        System.out.println("index change: "+i+" --> "+newIndex);
+                        System.out.println("index change: " + i + " --> " + newIndex);
                     }
                 }
             }
